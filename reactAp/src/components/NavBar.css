@@ -1,0 +1,21 @@
+h2 {
+    color: white;
+    padding-top: 0;
+    font-size: 6rem;
+}
+
+ul li {
+
+    background-color: white;
+    display: inline;
+    padding: 3rem;
+    justify-content: space-between;
+
+}
+
+ul li a {
+    color: black;
+    font-family: "Roboto";
+    text-decoration: none;
+    
+}

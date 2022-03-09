@@ -1,13 +1,17 @@
+
+
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
+   <>
+    <NavBar/>
+    <ItemListContainer/>
     <div className="App">
       <header className="App-header">
-        <NavBar/>
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hola mundo
         </p>
@@ -21,6 +25,7 @@ function App() {
         </a>
       </header>
     </div>
+   </>
   );
 }
 

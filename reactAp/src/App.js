@@ -3,13 +3,13 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './container/ItemListContainer';
 
 function App() {
   return (
    <>
     <NavBar/>
-    <ItemListContainer/>
+    <ItemListContainer saludo = "hola soy ItemListConteiner"/>
     <div className="App">
       <header className="App-header">
         <p>

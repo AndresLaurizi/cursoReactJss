@@ -36,7 +36,6 @@ export default function Contador({ stock, inicial }) {
     }
   }
   else{
-    console.log("se salva?")
     setDesactivadoBtn(true)
   }
    

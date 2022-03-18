@@ -24,18 +24,28 @@ export default function Contador({ stock, inicial }) {
 
   const agregar = () => {
     setStockNuevo(stockNuevo - contador)
+    console.log(stockNuevo)
   }
 
  useEffect(() => {
-   if(stockNuevo===0){
-     alert("Sin stock")
-     setDesactivadoBtn(true)
-   }
+
+  if (stock!=0){
+    if(stockNuevo===0){
+      alert("Sin stock")
+      setDesactivadoBtn(true)
+    }
+  }
+  else{
+    console.log("se salva?")
+    setDesactivadoBtn(true)
+  }
+   
    setCount(parseInt(inicial))
  },[stockNuevo,inicial])
 
   return (
     <>
+       
       <div class="botonera" >
         <button onClick={resta} class="resta">-</button>
         <p class="result">{contador}</p>

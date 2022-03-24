@@ -2,7 +2,7 @@ import './Contador.css'
 import React, { useEffect, useState } from 'react'
 
 
-export default function Contador({ stock, inicial }) {
+export default function ItemCount({ stock, inicial }) {
 
   const [contador, setCount] = useState(parseInt(inicial))
   const [desactivadoBtn, setDesactivadoBtn] = useState(false);
@@ -45,10 +45,10 @@ export default function Contador({ stock, inicial }) {
   return (
     <>
        
-      <div class="botonera" >
-        <button onClick={resta} class="resta">-</button>
-        <p class="result">{contador}</p>
-        <button onClick={suma} class="suma">+</button>
+      <div className="botonera" >
+        <button onClick={resta} className="resta">-</button>
+        <p className="result">{contador}</p>
+        <button onClick={suma} className="suma">+</button>
       </div>
       <div>   
       <button onClick= {agregar} disabled= {desactivadoBtn} >Agregar carrito  </button>

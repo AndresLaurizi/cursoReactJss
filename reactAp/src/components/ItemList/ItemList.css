@@ -1,0 +1,13 @@
+div .Items{
+    display: inline-flex;
+    background-color: aqua;
+    
+}
+
+div .espaciado {
+    justify-content: space-evenly ;
+    background-color: royalblue;
+    justify-content:center;
+    padding: 5px;
+ 
+}

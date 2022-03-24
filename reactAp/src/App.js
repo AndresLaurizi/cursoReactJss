@@ -5,14 +5,16 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './container/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
+import ItemList from './components/ItemList/ItemList';
 
 
 function App() {
   return (
    <>
     <NavBar/>
-    <ItemListContainer saludo = "hola soy ItemListConteiner"/>
-    <ItemCount stock= "5" inicial = "1" />
+    <ItemListContainer />
+    
+    
     <div className="App">
       <header className="App-header">
         <p>
@@ -26,6 +28,7 @@ function App() {
         >
           Learn React
         </a>
+      
       </header>
     </div>
    </>
